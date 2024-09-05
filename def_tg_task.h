@@ -46,3 +46,7 @@
 // EN: Waiting time when Internet or WiFi is not available
 // RU: Время ожидания при недоступности интернет или WiFi
 #define CONFIG_TELEGRAM_INTERNET_INTERVAL 30000
+
+// EN: Time to wait for a message to be sent to the queue in milliseconds
+// RU: Время ожидания отправки сообщения из Телеграм в очередь в миллисекундах
+#define CONFIG_TELEGRAM_INBOX_QUEUE_WAIT 1000
