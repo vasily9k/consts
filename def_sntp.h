@@ -7,8 +7,12 @@
 // -----------------------------------------------------------------------------------------------------------------------
 // EN: Timezone
 // RU: Часовой пояс
-#define CONFIG_SNTP_TIMEZONE "MSK-3"
-#define CONFIG_SNTP_TIMEZONE_SECONDS 60*60*3
+#ifndef CONFIG_SNTP_TIMEZONE
+    #define CONFIG_SNTP_TIMEZONE "UTC+0"
+#endif
+#ifndef CONFIG_SNTP_TIMEZONE_SECONDS
+    #define CONFIG_SNTP_TIMEZONE_SECONDS 60*60*0
+#endif
 // EN: Synchronization interval in milliseconds
 // RU: Интервал синхронизации в миллисекундах
 #define CONFIG_SNTP_DELAY_NORMAL 3600000
