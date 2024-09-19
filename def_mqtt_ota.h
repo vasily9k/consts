@@ -17,8 +17,8 @@
 // EN: TLS certificate for the OTA update server
 // RU: TLS-сертификат для сервера OTA обновлений
 #define CONFIG_OTA_PEM_STORAGE CONFIG_DEFAULT_TLS_STORAGE
-#define CONFIG_OTA_PEM_START CONFIG_DEFAULT_TLS_PEM_START
-#define CONFIG_OTA_PEM_END CONFIG_DEFAULT_TLS_PEM_END
+#define CONFIG_OTA_PEM_START "_binary_api_telegram_org_pem_start"
+#define CONFIG_OTA_PEM_END "_binary_api_telegram_org_pem_end"
 // EN: OTA task parameters
 // RU: Параметры задачи OTA
 #define CONFIG_OTA_TASK_STACK_SIZE 4*1024
